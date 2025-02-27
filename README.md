@@ -3,26 +3,17 @@
 ## Objective: Containerize a simple web application using Docker.
 
 #### Steps:
+ 
+i)install docker on ubuntu 
 
-####  i)install docker on ubuntu 
+##Command to install docker##
 
-#### Command to install docker :
+sudo apt update
+sudo apt install docker.io -y
 
-sudo apt-get update
+####start the docker service####
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
 
-sudo apt-get install ca-certificates curl
-
-sudo install -m 0755 -d /etc/apt/keyrings
-
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo \"${UBUNTU_CODENAME:-$VERSION_CODENAME}\") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-sudo apt-get update
-
-### Install Docker packages
-
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
+<img width="1200" alt="Screenshot 2025-02-27 at 11 38 56 PM" src="https://github.com/user-attachments/assets/e1d9c586-8f56-4fbc-a327-f1a70a2e5a85" />
