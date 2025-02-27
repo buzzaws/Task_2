@@ -36,7 +36,7 @@ iv)  create requirements.txt
 
 #######################   Create Docker file  ####################################
 
-i)Create docker file
+i) Create dockerfile
 
 ii) Build Image 
 
