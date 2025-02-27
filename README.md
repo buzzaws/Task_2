@@ -60,5 +60,16 @@ iv) Access via web browser
 
 <img width="1200" alt="Screenshot 2025-02-27 at 11 51 08 PM" src="https://github.com/user-attachments/assets/d0d0eee3-72ca-4d36-907c-05994f9402a8" />
 
+############  Push the Docker image to Docker Hub or AWS Elastic Container Registry (ECR).  ###########
+
+docker tag flask-docker-app:latest buzzeraws/assignment:latest
+
+docker login -u buzzeraws -p buzzeraws
+
+docker push buzzeraws/assignment:latest
+
+<img width="1200" alt="Screenshot 2025-02-28 at 12 50 30 AM" src="https://github.com/user-attachments/assets/3aaac33c-c538-4bcb-b7e0-a47c5e4fbfaf" />
+
+
 
 
