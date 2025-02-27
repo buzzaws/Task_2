@@ -40,9 +40,19 @@ i)Create docker file
 
 ii) Build Image 
 
+command to build image
+
+docker build -t flask-docker-app .
+
 iii) Run the container using build Image
 
+Command to run the docker container
+
+docker run -d flask-docker-app:latest
+
 iv) Access via web browser
+
+34.230.4.107:8000
 
 
 <img width="1200" alt="Screenshot 2025-02-27 at 11 51 59 PM" src="https://github.com/user-attachments/assets/25496201-17da-43de-aa4a-23e756a7fdd2" />
